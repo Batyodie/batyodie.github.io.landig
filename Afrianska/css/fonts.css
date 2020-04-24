@@ -1,0 +1,28 @@
+@font-face {
+  font-family: "Galien-Bold";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Galien-Bold.woff2") format("woff2"), url("../fonts/Galien-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Galien-light";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Galien-light.woff2") format("woff2"), url("../fonts/Galien-light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Gilroy-Light";
+  font-weight: 400;
+  font-style: normal;
+  src: url("../fonts/Gilroy-Light.woff2") format("woff2"), url("../fonts/Gilroy-Light.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Galien-Regular";
+  font-weight: 500;
+  font-style: normal;
+  src: url("../fonts/Galien-Regular.woff2") format("woff2"), url("../fonts/Galien-Regular.woff") format("woff");
+}
+/*# sourceMappingURL=fonts.css.map */

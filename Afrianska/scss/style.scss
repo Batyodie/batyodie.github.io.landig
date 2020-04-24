@@ -1,0 +1,332 @@
+@import "vars";
+@import "fonts";
+@import "sectionMain";
+@import "belovedAddFooter";
+@import "contacts";
+// global page styles
+
+html{
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+*,*::after,*::before{
+    box-sizing: inherit;
+}
+body{
+
+color: $accent;
+font-family: "Gilroy-Light";
+font-weight: 200;
+font-size: 16px;
+line-height: 26px;
+letter-spacing: 0.05em;
+
+// header styles
+}
+// flex container
+.header{
+max-width: 100%;
+width: 1366px;
+margin: 0 auto; 
+}
+
+
+.container{
+max-width: 100%;
+width: 1366px;
+margin: 0 auto;
+}
+.header--top{
+display: flex;
+justify-content: space-between;
+margin: 48px 83px 0px 83px;
+}
+.header--gamburger-button{
+    width: 24px;
+    height: 15px;
+}
+.menu--btn{
+   
+    
+    background-color: #FFFFFF;
+    border: none;
+    position: relative;
+    &::after{
+        content: "";
+        width:24px;
+        height: 2px;
+        background-color: $accent;
+        position: absolute;
+        top: -14px;
+        left: 1px;
+        box-shadow: 0 5px 0 0 $accent, 0 10px 00 $accent;
+       
+
+    }
+}
+
+
+
+.header--mid{
+display: flex;
+ justify-content: flex-start;
+ position: relative;
+ 
+ height: 738px;
+}
+.header--mid-content-text{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: flex-start;
+max-height: 567px;
+margin: 10px 0px 10px 212px;
+padding-left: 30px;
+}
+
+.content-text-heading{
+width: 510px;
+height: 148px;
+margin: 10px 0px 32px 10px;
+}
+
+.heading{
+font-family: "Galien-Bold";
+font-size: 64px;
+line-height: 74px;
+margin: 0px;
+color: #1F3F68;
+
+}
+
+.content-text-paragraph{
+max-width: 425px;
+margin: 0px 30px 71px 10px;
+}
+
+.paragraph-style{
+
+font-family: "Gilroy-Light";
+font-size: 16px;
+line-height: 26px;
+color: #1F3F68;
+// opacity: 0.6;
+text-align: center;
+
+}
+
+
+.content-text--button-style{
+background: #5A98D0;
+box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+border-radius: 10px;
+padding: 15px 48px;
+}
+.button-style-text{
+font-family: "Gilroy-Light";
+font-size: 16px;
+line-height: 26px;
+color: #FFFFFF;
+}
+.content-text--button-style:hover{
+    background: #316099;
+  }
+  .content-text--button-style:active{
+    opacity: 0.8;
+    transform: scale(.95);
+  }
+
+// header--mid-content-logo
+.header--mid-content-logo{
+ position: absolute;
+ left: 50%;
+    
+
+}
+.header--mid-content-logo-style{
+width: 670px;
+}
+
+// adaptive media for header in home page
+@media (max-width: 1300px){
+    .header--mid{
+        justify-content: space-around;
+    }
+    .header--mid-content-text{
+        margin:1px 0px 1px 5px;  
+    }
+    .header--mid-content-logo{
+        position: static;
+        height: 490px;
+        }
+        .header--mid-content-logo-style{
+            width: 490px;
+            }
+}
+@media (max-width: 1200px){
+.header--mid{
+    justify-content: space-between;
+}
+.header--mid-content-text{
+    margin:1px 0px 1px 5px;
+    padding: 0px;    
+    }
+.header--mid-content-logo-style{
+width: 520px;
+}
+.header--mid-content-logo{
+position: static;
+height: 498px;
+}
+.header--mid-content-text{
+    width: 470px;
+}
+.heading{
+    font-size: 60px;
+}
+
+}
+
+
+@media (max-width: 990px){
+    .header--mid{
+    height: 1000px;
+    flex-direction: column;
+    align-items: center;
+    
+    }
+    .header--mid-content-logo{
+    margin: 10px 10px 10px 10px ;
+    position: static;
+    }
+    .header--mid-content-text{
+    margin:10px 0px 10px 10px;
+    padding: 0px;    
+    }
+
+}
+@media (max-width: 768px){
+    body{
+        overflow-x: hidden;
+    }
+.heading{
+font-size: 50px;
+width: 470px;
+text-align: center;
+}
+.content-text-paragraph {
+    max-width: 400px;
+    margin: 0px 25px 50px 25px;
+    text-align: center;
+}
+.header--mid-content-text{
+align-items: center;
+}
+.header--mid-content-logo-style{
+    width: 500px;
+    }
+
+
+}
+@media(max-width: 500px){
+    .content-text-heading{
+    width: 422px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    }
+    .heading{
+        font-size: 45px;
+        width: 422px;
+        text-align: center;
+        line-height: 30px;
+       
+        }
+        .content-text-paragraph {
+            max-width: 400px;
+            margin: 0px 20px 45px 20px;
+            text-align: center;
+        }
+        .header--mid-content-text{
+        align-items: center;
+        width: 422px;
+        }
+        .header--mid-content-logo{
+        width: 400px;
+        }
+        .header--mid-content-logo-style{
+            width: 400px;
+            
+            }
+}
+@media(max-width: 400px){
+    .content-text-heading{
+    width: 402px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+        
+    }
+    .header--mid-content-logo{
+        height: 370px;
+    }
+    .heading{
+        font-size: 40px;
+        width: 390px;
+        text-align: center;
+        line-height: 30px;
+        margin: 10px;
+       
+        }
+        .content-text-paragraph {
+            max-width: 400px;
+            margin: 0px 15px 4-px 15px;
+            text-align: center;
+        }
+        .header--mid-content-text{
+        align-items: center;
+        width: 402px;
+        }
+        .header--mid-content-logo{
+        width: 350px;
+        
+        }
+        .header--mid-content-logo-style{
+            width: 350px;
+            
+            }
+}
+@media(max-width: 320px){
+
+    .header--mid-content-text{
+        align-items: center;
+        width: 320px;
+        }
+    .content-text-heading{
+        width: 320px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+            
+        }
+    .content-text-paragraph {
+        width: 320px;
+        margin: 0px 15px 0px 15px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .heading{
+        width: 320px;
+    }
+    .header--mid-content-logo{
+        margin-left: 15px;
+        width: 320px;
+        
+        }
+        .header--mid-content-logo-style{
+            width: 320px;
+            
+            }
+}
+// end section header  
